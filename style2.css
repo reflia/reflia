@@ -1,0 +1,203 @@
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  min-height: auto;
+}
+
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(3px);
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-tittle {
+  font-family: "Sacramento", cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.mynavbar .nav-link {
+  text-transform: uppercase;
+}
+
+.card body {
+  background-color: #0a0a0a;
+}
+
+.info {
+  background-color: var(--bg);
+  color: white;
+  padding-top: 2.5rem;
+  padding-bottom: 8rem;
+}
+
+.info h2 {
+  font-family: "sacramento";
+  color: var(--pink);
+  font-size: 5rem;
+}
+
+.info .alamat {
+  font-size: 1.1rem;
+}
+
+.info a:hover {
+  color: #fff;
+  background-color: var(--pink);
+}
+
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.info .card {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border: 1px solid #999;
+}
+
+.info .car-header {
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+  font-size: 1.5rem;
+}
+
+.info .card-footer {
+  border-top: 1px solid #999;
+  font-size: 0.9 rem;
+  font-weight: 300;
+}
+
+/* media query*/
+/* extra large*/
+@media (max-widht: 1200px) {
+  .home.heart {
+    transform: translateX(-50%) translateY(45px);
+  }
+}
+
+.timeline li .timeline-panel {
+  width: 40%;
+  float: left;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  position: relative;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.timeline li .timeline-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  top: 80px;
+  right: -15px;
+}
+
+.timeline-panel::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  top: 81px;
+  right: -13px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -13px;
+  right: auto;
+}
+
+/* laptop */
+@media (max-widht: 992px) {
+  html {
+    font-size: 75%;
+  }
+
+  .simply-countdown>.simply-section {
+    padding: 70px;
+  }
+
+  .home.heart {
+    display: none;
+  }
+
+  .timeline::before {
+    left: 60px;
+  }
+
+  .timeline li .timeline-image {
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+  }
+
+  .timeline li .timeline-panel {
+    width: calc((100% - 200px));
+    float: right;
+  }
+}
+
+/* tablet */
+@media (max-widht: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .simply-countdown>.simply-section {
+    padding: 60px;
+    margin: 5px;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+/* handphone */
+@media (max-widht: 576px) {
+  html {
+    font-size: 60%;
+  }
+
+  .simply-countdown>.simply-section {
+    padding: 30px;
+    margin: 3px;
+  }
+}
